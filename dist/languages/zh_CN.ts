@@ -12372,4 +12372,645 @@ or click to browse</source>
         <translation>发现游戏时不会计算文件夹大小。</translation>
     </message>
 </context>
+<context>
+    <name>QtCommon</name>
+    <message>
+        <source>Game Requires Firmware</source>
+        <translation>游戏需要固件</translation>
+    </message>
+    <message>
+        <source>This game may require firmware to function properly, and you don't have any installed. Please install firmware before launching, or press "OK" to launch anyways.</source>
+        <translation>这个游戏可能需要固件才能正常运行,但您还没有安装任何固件。请在启动前安装固件,或者按 “确定” 继续启动。</translation>
+    </message>
+    <message>
+        <source>Installing Firmware...</source>
+        <translation>正在安装固件……</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>取消</translation>
+    </message>
+    <message>
+        <source>Firmware Install Failed</source>
+        <translation>安装固件失败</translation>
+    </message>
+    <message>
+        <source>Firmware Install Succeeded</source>
+        <translation>安装固件成功</translation>
+    </message>
+    <message>
+        <source>Firmware integrity verification failed!</source>
+        <translation>固件完整性验证失败！</translation>
+    </message>
+    <message>
+        <source>Verification failed for the following files:
+
+%1</source>
+        <translation>以下文件完整性验证失败：
+
+%1</translation>
+    </message>
+    <message>
+        <source>Verifying integrity...</source>
+        <translation>正在验证完整性...</translation>
+    </message>
+    <message>
+        <source>Integrity verification succeeded!</source>
+        <translation>完整性验证成功！</translation>
+    </message>
+    <message>
+        <source>The operation completed successfully.</source>
+        <translation>操作成功完成。</translation>
+    </message>
+    <message>
+        <source>Integrity verification failed!</source>
+        <translation>完整性验证失败！</translation>
+    </message>
+    <message>
+        <source>File contents may be corrupt or missing.</source>
+        <translation>文件内容可能缺失或已损坏。</translation>
+    </message>
+    <message>
+        <source>Integrity verification couldn't be performed</source>
+        <translation>无法执行完整性验证</translation>
+    </message>
+    <message>
+        <source>Firmware installation cancelled, firmware may be in a bad state or corrupted. File contents could not be checked for validity.</source>
+        <translation>固件安装失败。固件可能处于异常状态或已损坏，无法验证文件内容的有效性。</translation>
+    </message>
+    <message>
+        <source>Select Dumped Keys Location</source>
+        <translation>选择导出的密钥文件位置</translation>
+    </message>
+    <message>
+        <source>Decryption Keys install succeeded</source>
+        <translation>密钥文件安装成功</translation>
+    </message>
+    <message>
+        <source>Decryption Keys install failed</source>
+        <translation>密钥文件安装失败</translation>
+    </message>
+    <message>
+        <source>Orphaned Profiles Detected!</source>
+        <translation>检测到孤立的配置文件!</translation>
+    </message>
+    <message>
+        <source>UNEXPECTED BAD THINGS MAY HAPPEN IF YOU DON'T READ THIS!&lt;br&gt;Eden has detected the following save directories with no attached profile:&lt;br&gt;%1&lt;br&gt;&lt;br&gt;The following profiles are valid:&lt;br&gt;%2&lt;br&gt;&lt;br&gt;Click "OK" to open your save folder and fix up your profiles.&lt;br&gt;Hint: copy the contents of the largest or last-modified folder elsewhere, delete all orphaned profiles, and move your copied contents to the good profile.&lt;br&gt;&lt;br&gt;Still confused? See the &lt;a href='https://git.eden-emu.dev/eden-emu/eden/src/branch/master/docs/user/Orphaned.md'&gt;help page&lt;/a&gt;.&lt;br&gt;</source>
+        <translation>如果您不阅读此内容,可能会发生意想不到的糟糕情况!&lt;br&gt;Eden 检测到以下存档目录没有附加的配置文件:&lt;br&gt;%1&lt;br&gt;&lt;br&gt;下列配置是有效的:&lt;br&gt;%2&lt;br&gt;&lt;br&gt;点击“确定”以打开您的存档文件夹并修复配置文件。&lt;br&gt;提示: 将最大或最近修改的文件夹内容复制到其他地方,删除所有孤立的配置文件,然后将复制的内容移到正确的配置文件中。&lt;br&gt;&lt;br&gt;还是感到疑惑? 请查看 &lt;a href='https://git.eden-emu.dev/eden-emu/eden/src/branch/master/docs/user/Orphaned.md'&gt;帮助页&lt;/a&gt;。&lt;br&gt;</translation>
+    </message>
+    <message>
+        <source>Really clear data?</source>
+        <translation>确实要清除数据吗?</translation>
+    </message>
+    <message>
+        <source>Important data may be lost!</source>
+        <translation>可能会丢失重要的数据!</translation>
+    </message>
+    <message>
+        <source>Are you REALLY sure?</source>
+        <translation>您真的确定吗?</translation>
+    </message>
+    <message>
+        <source>Once deleted, your data will NOT come back!
+Only do this if you're 100% sure you want to delete this data.</source>
+        <translation>在删除后,您将无法找回数据!
+仅在您 100% 确认要删除此数据时才这样做。</translation>
+    </message>
+    <message>
+        <source>Clearing...</source>
+        <translation>正在清除...</translation>
+    </message>
+    <message>
+        <source>Select Export Location</source>
+        <translation>选择导出位置</translation>
+    </message>
+    <message>
+        <source>%1.zip</source>
+        <translation>%1.zip</translation>
+    </message>
+    <message>
+        <source>Zipped Archives (*.zip)</source>
+        <translation>压缩档案 (*.zip)</translation>
+    </message>
+    <message>
+        <source>Exporting data. This may take a while...</source>
+        <translation>正在导出数据。这可能需要一些时间...</translation>
+    </message>
+    <message>
+        <source>Exporting</source>
+        <translation>正在导出</translation>
+    </message>
+    <message>
+        <source>Exported Successfully</source>
+        <translation>导出成功</translation>
+    </message>
+    <message>
+        <source>Data was exported successfully.</source>
+        <translation>数据已成功导出。</translation>
+    </message>
+    <message>
+        <source>Export Cancelled</source>
+        <translation>导出已被取消</translation>
+    </message>
+    <message>
+        <source>Export was cancelled by the user.</source>
+        <translation>导出已被用户取消。</translation>
+    </message>
+    <message>
+        <source>Export Failed</source>
+        <translation>导出失败</translation>
+    </message>
+    <message>
+        <source>Ensure you have write permissions on the targeted directory and try again.</source>
+        <translation>请确认您是否具有目标目录的写入权限然后再次尝试。</translation>
+    </message>
+    <message>
+        <source>Select Import Location</source>
+        <translation>选择导入位置</translation>
+    </message>
+    <message>
+        <source>Import Warning</source>
+        <translation>导入警告</translation>
+    </message>
+    <message>
+        <source>All previous data in this directory will be deleted. Are you sure you wish to proceed?</source>
+        <translation>此目录中的所有先前数据将被删除。您确定要继续吗?</translation>
+    </message>
+    <message>
+        <source>Importing data. This may take a while...</source>
+        <translation>正在导入数据。这需要一些时间...</translation>
+    </message>
+    <message>
+        <source>Importing</source>
+        <translation>正在导入</translation>
+    </message>
+    <message>
+        <source>Imported Successfully</source>
+        <translation>导入成功</translation>
+    </message>
+    <message>
+        <source>Data was imported successfully.</source>
+        <translation>数据已导入成功。</translation>
+    </message>
+    <message>
+        <source>Import Cancelled</source>
+        <translation>导入已被取消</translation>
+    </message>
+    <message>
+        <source>Import was cancelled by the user.</source>
+        <translation>导入已被用户取消。</translation>
+    </message>
+    <message>
+        <source>Import Failed</source>
+        <translation>导入失败</translation>
+    </message>
+    <message>
+        <source>Ensure you have read permissions on the targeted directory and try again.</source>
+        <translation>请确认是否您具有目标目录的读取权限然后再次尝试。</translation>
+    </message>
+    <message>
+        <source>Keys not installed</source>
+        <translation>未安装密钥</translation>
+    </message>
+    <message>
+        <source>Install decryption keys and restart Eden before attempting to install firmware.</source>
+        <translation>在尝试安装固件之前先安装解密密钥并重启 Eden。</translation>
+    </message>
+    <message>
+        <source>Select Dumped Firmware Source Location</source>
+        <translation>选择已转储的固件源位置</translation>
+    </message>
+    <message>
+        <source>Select Dumped Firmware ZIP</source>
+        <translation>选择已转储的固件 ZIP</translation>
+    </message>
+    <message>
+        <source>Firmware cleanup failed</source>
+        <translation>清理固件失败</translation>
+    </message>
+    <message>
+        <source>Failed to clean up extracted firmware cache.
+Check write permissions in the system temp directory and try again.
+OS reported error: %1</source>
+        <translation>清理提取的固件缓存失败。
+请检查系统临时目录的写入权限然后重试。
+OS 报告的错误: %1</translation>
+    </message>
+    <message>
+        <source>Linked Save Data</source>
+        <translation>链接存档数据</translation>
+    </message>
+    <message>
+        <source>Save data has been linked.</source>
+        <translation>已链接存档数据。</translation>
+    </message>
+    <message>
+        <source>Failed to link save data</source>
+        <translation>链接存档数据失败</translation>
+    </message>
+    <message>
+        <source>Could not link directory:
+	%1
+To:
+	%2</source>
+        <translation>无法链接目录:
+	%1
+到:
+	%2</translation>
+    </message>
+    <message>
+        <source>Already Linked</source>
+        <translation>已链接</translation>
+    </message>
+    <message>
+        <source>This title is already linked to Ryujinx. Would you like to unlink it?</source>
+        <translation>此游戏已经被链接到 Ryujinx。您要取消链接它吗?</translation>
+    </message>
+    <message>
+        <source>Failed to unlink old directory</source>
+        <translation>取消链接旧目录失败</translation>
+    </message>
+    <message>
+        <source>OS returned error: %1</source>
+        <translation>OS 返回错误: %1</translation>
+    </message>
+    <message>
+        <source>Failed to copy save data</source>
+        <translation>复制存档数据失败</translation>
+    </message>
+    <message>
+        <source>Unlink Successful</source>
+        <translation>取消链接成功</translation>
+    </message>
+    <message>
+        <source>Successfully unlinked Ryujinx save data. Save data has been kept intact.</source>
+        <translation>已成功取消链接 Ryujinx 存档数据。存档数据已保持完整。</translation>
+    </message>
+    <message>
+        <source>Could not find Ryujinx installation</source>
+        <translation>无法找到 Ryujinx 安装数据</translation>
+    </message>
+    <message>
+        <source>Could not find a valid Ryujinx installation. This may typically occur if you are using Ryujinx in portable mode.
+
+Would you like to manually select a portable folder to use?</source>
+        <translation>未找到有效的 Ryujinx 安装。这通常可能发生在您以便携模式使用 Ryujinx 时。您想手动选择一个便携模式文件夹来使用吗?</translation>
+    </message>
+    <message>
+        <source>Ryujinx Portable Location</source>
+        <translation>便携 Ryujinx 安装位置</translation>
+    </message>
+    <message>
+        <source>Not a valid Ryujinx directory</source>
+        <translation>不是有效的 Ryujinx 安装目录</translation>
+    </message>
+    <message>
+        <source>The specified directory does not contain valid Ryujinx data.</source>
+        <translation>指定的目录不包含有效的 Ryujinx 数据。</translation>
+    </message>
+    <message>
+        <source>Could not find Ryujinx save data</source>
+        <translation>找不到 Ryujinx 的存档数据</translation>
+    </message>
+    <message>
+        <source>Error Removing Contents</source>
+        <translation>删除内容时出错</translation>
+    </message>
+    <message>
+        <source>Error Removing Update</source>
+        <translation>删除更新时出错</translation>
+    </message>
+    <message>
+        <source>Error Removing DLC</source>
+        <translation>删除 DLC 时出错</translation>
+    </message>
+    <message>
+        <source>Successfully Removed</source>
+        <translation>删除成功</translation>
+    </message>
+    <message>
+        <source>Successfully removed the installed base game.</source>
+        <translation>已成功删除安装的基础游戏。</translation>
+    </message>
+    <message>
+        <source>The base game is not installed in the NAND and cannot be removed.</source>
+        <translation>基础游戏未被安装到 NAND 中并且无法被删除。</translation>
+    </message>
+    <message>
+        <source>Successfully removed the installed update.</source>
+        <translation>已成功删除安装的更新。</translation>
+    </message>
+    <message>
+        <source>There is no update installed for this title.</source>
+        <translation>这个游戏没有任何已安装的更新。</translation>
+    </message>
+    <message>
+        <source>There are no DLCs installed for this title.</source>
+        <translation>这个游戏没有任何已安装的 DLC。</translation>
+    </message>
+    <message>
+        <source>Successfully removed %1 installed DLC.</source>
+        <translation>成功删除 %1 个已安装的 DLC。</translation>
+    </message>
+    <message>
+        <source>Error Removing Transferable Shader Cache</source>
+        <translation>删除可传输着色器缓存错误</translation>
+    </message>
+    <message>
+        <source>A shader cache for this title does not exist.</source>
+        <translation>这个游戏的着色器缓存不存在。</translation>
+    </message>
+    <message>
+        <source>Successfully removed the transferable shader cache.</source>
+        <translation>成功删除可传输着色器缓存。</translation>
+    </message>
+    <message>
+        <source>Failed to remove the transferable shader cache.</source>
+        <translation>删除可传输着色器缓存失败。</translation>
+    </message>
+    <message>
+        <source>Error Removing Vulkan Driver Pipeline Cache</source>
+        <translation>移除 Vulkan 驱动管线缓存错误</translation>
+    </message>
+    <message>
+        <source>Failed to remove the driver pipeline cache.</source>
+        <translation>删除驱动管线缓存失败。</translation>
+    </message>
+    <message>
+        <source>Error Removing Transferable Shader Caches</source>
+        <translation>删除可传输着色器缓存错误</translation>
+    </message>
+    <message>
+        <source>Successfully removed the transferable shader caches.</source>
+        <translation>成功删除可传输着色器缓存。</translation>
+    </message>
+    <message>
+        <source>Failed to remove the transferable shader cache directory.</source>
+        <translation>删除可传输着色器缓存失败。</translation>
+    </message>
+    <message>
+        <source>Error Removing Custom Configuration</source>
+        <translation>删除自定义配置错误</translation>
+    </message>
+    <message>
+        <source>A custom configuration for this title does not exist.</source>
+        <translation>这个游戏的自定义设置不存在。</translation>
+    </message>
+    <message>
+        <source>Successfully removed the custom game configuration.</source>
+        <translation>成功移除自定义游戏设置。</translation>
+    </message>
+    <message>
+        <source>Failed to remove the custom game configuration.</source>
+        <translation>移除自定义游戏设置失败。</translation>
+    </message>
+    <message>
+        <source>Reset Metadata Cache</source>
+        <translation>重置元数据缓存</translation>
+    </message>
+    <message>
+        <source>The metadata cache is already empty.</source>
+        <translation>元数据缓存已为空。</translation>
+    </message>
+    <message>
+        <source>The metadata cache couldn't be deleted. It might be in use or non-existent.</source>
+        <translation>缓存数据删除失败。它可能不存在或正在被使用。</translation>
+    </message>
+    <message>
+        <source>Create Shortcut</source>
+        <translation>创建快捷方式</translation>
+    </message>
+    <message>
+        <source>Do you want to launch the game in fullscreen?</source>
+        <translation>您想以全屏模式启动游戏吗？</translation>
+    </message>
+    <message>
+        <source>Shortcut Created</source>
+        <translation>已创建快捷方式</translation>
+    </message>
+    <message>
+        <source>Successfully created a shortcut to %1</source>
+        <translation>%1 的快捷方式创建成功</translation>
+    </message>
+    <message>
+        <source>Shortcut may be Volatile!</source>
+        <translation>快捷方式可能不稳定!</translation>
+    </message>
+    <message>
+        <source>This will create a shortcut to the current AppImage. This may not work well if you update. Continue?</source>
+        <translation>这回创建到当前 AppImage 的快捷方式。它可能会在您更新后失效。要继续吗?</translation>
+    </message>
+    <message>
+        <source>Failed to Create Shortcut</source>
+        <translation>创建快捷方式失败</translation>
+    </message>
+    <message>
+        <source>Failed to create a shortcut to %1</source>
+        <translation>%1 的快捷方式创建失败</translation>
+    </message>
+    <message>
+        <source>Create Icon</source>
+        <translation>创建图标</translation>
+    </message>
+    <message>
+        <source>Cannot create icon file. Path "%1" does not exist and cannot be created.</source>
+        <translation>无法创建图标文件。路径“ %1 ”不存在且无法被创建。</translation>
+    </message>
+    <message>
+        <source>No firmware available</source>
+        <translation>无可用固件</translation>
+    </message>
+    <message>
+        <source>Please install firmware to use the home menu.</source>
+        <translation>请先安装固件才能使用主页菜单。</translation>
+    </message>
+    <message>
+        <source>Home Menu Applet</source>
+        <translation>主页菜单小程序</translation>
+    </message>
+    <message>
+        <source>Home Menu is not available. Please reinstall firmware.</source>
+        <translation>主页菜单不可用。请重新安装固件。</translation>
+    </message>
+    <message>
+        <source>Mod Name</source>
+        <translation>模组名称</translation>
+    </message>
+    <message>
+        <source>What should this mod be called?</source>
+        <translation>这个模组应该叫什么名字？</translation>
+    </message>
+    <message>
+        <source>RomFS</source>
+        <translation>RomFS</translation>
+    </message>
+    <message>
+        <source>ExeFS/Patch</source>
+        <translation>ExeFS/Patch</translation>
+    </message>
+    <message>
+        <source>Cheat</source>
+        <translation>作弊</translation>
+    </message>
+    <message>
+        <source>Mod Type</source>
+        <translation>模组类型</translation>
+    </message>
+    <message>
+        <source>Could not detect mod type automatically. Please manually specify the type of mod you downloaded.
+
+Most mods are RomFS mods, but patches (.pchtxt) are typically ExeFS mods.</source>
+        <translation>无法自动检测模组类型。请手动说明你下载的模组类型。
+
+大多数模组是 RomFS 模组，但补丁（.pchtxt）通常是 ExeFS 模组。</translation>
+    </message>
+    <message>
+        <source>Mod Extract Failed</source>
+        <translation>模组提取失败</translation>
+    </message>
+    <message>
+        <source>Failed to create temporary directory %1</source>
+        <translation>未能创建临时 %1 目录</translation>
+    </message>
+    <message>
+        <source>Zip file %1 is empty</source>
+        <translation>压缩文件 %1 是空的。</translation>
+    </message>
+    <message>
+        <source>Error Opening Shader Cache</source>
+        <translation>打开着色器缓存错误</translation>
+    </message>
+    <message>
+        <source>Failed to create or open shader cache for this title, ensure your app data directory has write permissions.</source>
+        <translation>无法为此游戏创建或打开着色器缓存,请确保您的 app data 目录具有写入权限。</translation>
+    </message>
+    <message>
+        <source>Contains game save data. DO NOT REMOVE UNLESS YOU KNOW WHAT YOU'RE DOING!</source>
+        <translation>包含游戏存档数据。除非你知道自己在做什么,否则不要删除！</translation>
+    </message>
+    <message>
+        <source>Contains Vulkan and OpenGL pipeline caches. Generally safe to remove.</source>
+        <translation>包含 Vulkan 和 OpenGL 管线缓存。通常可以安全删除。</translation>
+    </message>
+    <message>
+        <source>Contains updates and DLC for games.</source>
+        <translation>包含游戏的更新和 DLC。</translation>
+    </message>
+    <message>
+        <source>Contains firmware and applet data.</source>
+        <translation>包含固件和小程序数据。</translation>
+    </message>
+    <message>
+        <source>Contains game mods, patches, and cheats.</source>
+        <translation>包含游戏 mod、补丁以及作弊。</translation>
+    </message>
+    <message>
+        <source>Decryption Keys were successfully installed</source>
+        <translation>已成功安装解密密钥</translation>
+    </message>
+    <message>
+        <source>Unable to read key directory, aborting</source>
+        <translation>无法读取密钥目录,正在放弃</translation>
+    </message>
+    <message>
+        <source>One or more keys failed to copy.</source>
+        <translation>一个或多个密钥复制失败。</translation>
+    </message>
+    <message>
+        <source>Verify your keys file has a .keys extension and try again.</source>
+        <translation>请确保密钥文件具有 .keys 的扩展名后重试。</translation>
+    </message>
+    <message>
+        <source>Decryption Keys failed to initialize. Check that your dumping tools are up to date and re-dump keys.</source>
+        <translation>密钥初始化失败。请检查您的转储工具是否为最新版本并重新转储密钥。</translation>
+    </message>
+    <message>
+        <source>Successfully installed firmware version %1</source>
+        <translation>成功安装固件版本 %1</translation>
+    </message>
+    <message>
+        <source>Unable to locate potential firmware NCA files</source>
+        <translation>无法定位潜在的固件 NCA 文件</translation>
+    </message>
+    <message>
+        <source>Failed to delete one or more firmware files.</source>
+        <translation>删除一个或多个固件文件失败。</translation>
+    </message>
+    <message>
+        <source>One or more firmware files failed to copy into NAND.</source>
+        <translation>将一个或多个固件文件复制到 NAND 失败。</translation>
+    </message>
+    <message>
+        <source>Firmware installation cancelled, firmware may be in a bad state or corrupted. Restart Eden or re-install firmware.</source>
+        <translation>固件安装失败。固件可能处于异常状态或已损坏。请重新启动 Eden 或重新安装固件。</translation>
+    </message>
+    <message>
+        <source>Firmware missing. Firmware is required to run certain games and use the Home Menu.</source>
+        <translation>固件缺失。需要固件才能运行某些游戏和主页。</translation>
+    </message>
+    <message>
+        <source>Firmware reported as present, but was unable to be read. Check for decryption keys and redump firmware if necessary.</source>
+        <translation>固件已报告存在,但无法读取。如有必要请检查解密密钥并重新转储固件。</translation>
+    </message>
+    <message>
+        <source>Eden has detected user data for the following emulators:</source>
+        <translation>Eden 已检测到下列模拟器的用户数据:</translation>
+    </message>
+    <message>
+        <source>Would you like to migrate your data for use in Eden?
+Select the corresponding button to migrate data from that emulator.
+This may take a while.</source>
+        <translation>您想将数据迁移到 Eden 中使用吗？
+请选择相应的按钮从该模拟器迁移数据。
+这可能需要一些时间。</translation>
+    </message>
+    <message>
+        <source>Clearing shader cache is recommended for all users.
+Do not uncheck unless you know what you're doing.</source>
+        <translation>建议所有用户清除着色器缓存。
+除非您知道自己在做什么，否则不要取消勾选。</translation>
+    </message>
+    <message>
+        <source>Keeps the old data directory. This is recommended if you aren't
+space-constrained and want to keep separate data for the old emulator.</source>
+        <translation>保留旧的数据目录。如果你的存储空间充足，并且想为旧
+模拟器保留独立的数据，这是推荐做法。</translation>
+    </message>
+    <message>
+        <source>Deletes the old data directory.
+This is recommended on devices with space constraints.</source>
+        <translation>删除旧的数据目录。
+建议在存储空间有限的设备上执行此操作。</translation>
+    </message>
+    <message>
+        <source>Creates a filesystem link between the old directory and Eden directory.
+This is recommended if you want to share data between emulators.</source>
+        <translation>在旧目录和 Eden 目录之间创建文件系统链接。
+如果您想在模拟器之间共享数据,建议这样做。</translation>
+    </message>
+    <message>
+        <source>Ryujinx title database does not exist.</source>
+        <translation>Ryujinx 标题数据库不存在。</translation>
+    </message>
+    <message>
+        <source>Invalid header on Ryujinx title database.</source>
+        <translation>Ryujinx 标题数据库头部无效。</translation>
+    </message>
+    <message>
+        <source>Invalid magic header on Ryujinx title database.</source>
+        <translation>Ryujinx 标题数据库 magic 头部无效。</translation>
+    </message>
+    <message>
+        <source>Invalid byte alignment on Ryujinx title database.</source>
+        <translation>Ryujinx 标题数据字节对齐无效。</translation>
+    </message>
+    <message>
+        <source>No items found in Ryujinx title database.</source>
+        <translation>在 Ryujinx 的标题数据库中找不到项目。</translation>
+    </message>
+    <message>
+        <source>Title %1 not found in Ryujinx title database.</source>
+        <translation>在 Ryujinx 的标题数据库中找不到标题 %1。</translation>
+    </message>
+</context>
 </TS>

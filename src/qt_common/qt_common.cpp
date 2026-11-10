@@ -17,6 +17,7 @@
 #include "common/cpu_features.h"
 #include "core/memory.h"
 
+#include <QCoreApplication>
 #include <QGuiApplication>
 #include <QStringLiteral>
 #include "core/frontend/emu_window.h"
@@ -135,12 +136,17 @@ Core::Frontend::EmuWindow::WindowSystemInfo GetWindowSystemInfo(QWindow* window)
     return wsi;
 }
 
+// These strings reach lupdate under the namespace they are written in (QtCommon::Content,
+// QtCommon::Game, ...) because that is what lupdate derives for a free function. Translating them
+// through rootObject->tr() looked them up in QWidget's context instead, which the .ts file never
+// has, so they always came back in English. Use one explicit context and mirror the namespace
+// entries into it in dist/languages.
 const QString tr(const char* str) {
-    return rootObject->tr(str);
+    return QCoreApplication::translate("QtCommon", str);
 }
 
 const QString tr(const std::string& str) {
-    return rootObject->tr(str.c_str());
+    return QCoreApplication::translate("QtCommon", str.c_str());
 }
 
 static void LogRuntimes() {
