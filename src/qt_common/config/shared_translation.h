@@ -13,6 +13,8 @@
 #include <memory>
 #include <utility>
 #include <vector>
+#include <QByteArray>
+#include <QCoreApplication>
 #include <QObject>
 #include <QString>
 #include "common/common_types.h"
@@ -22,6 +24,13 @@ namespace ConfigurationShared {
 using TranslationMap = std::map<u32, std::pair<QString, QString>>;
 using ComboboxTranslations = std::vector<std::pair<u32, QString>>;
 using ComboboxTranslationMap = std::map<u32, ComboboxTranslations>;
+
+// QT_TRANSLATE_NOOP only registers the English source text with lupdate. The maps below keep that
+// English text because they are built before a QTranslator is installed, so they have to be
+// translated where they are shown, not where they are declared.
+inline QString TranslateText(const QString& source) {
+    return QCoreApplication::translate("MainWindow", source.toUtf8().constData());
+}
 
 std::unique_ptr<TranslationMap> InitializeTranslations(QObject* parent);
 

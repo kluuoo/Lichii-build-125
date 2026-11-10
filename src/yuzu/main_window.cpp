@@ -1079,7 +1079,7 @@ void MainWindow::InitializeWidgets() {
             [this](const QPoint& menu_location) {
                 QMenu context_menu;
                 for (auto const& [type, text] : ConfigurationShared::frame_gen_type_texts_map) {
-                    context_menu.addAction(text, [this, type] {
+                    context_menu.addAction(ConfigurationShared::TranslateText(text), [this, type] {
                         Settings::values.frame_gen_type.SetValue(type);
                         Settings::values.frame_gen.SetValue(true);
                         UpdateFrameGenButton();
@@ -1146,7 +1146,8 @@ void MainWindow::InitializeWidgets() {
             [this](const QPoint& menu_location) {
                 QMenu context_menu;
                 for (auto const& aa_text_pair : ConfigurationShared::anti_aliasing_texts_map) {
-                    context_menu.addAction(aa_text_pair.second, [this, aa_text_pair] {
+                    context_menu.addAction(ConfigurationShared::TranslateText(aa_text_pair.second),
+                                          [this, aa_text_pair] {
                         Settings::values.anti_aliasing.SetValue(aa_text_pair.first);
                         UpdateAAText();
                     });
@@ -1169,7 +1170,8 @@ void MainWindow::InitializeWidgets() {
             [this](const QPoint& menu_location) {
                 QMenu context_menu;
                 for (auto const& filter_text_pair : ConfigurationShared::scaling_filter_texts_map) {
-                    context_menu.addAction(filter_text_pair.second, [this, filter_text_pair] {
+                    context_menu.addAction(ConfigurationShared::TranslateText(filter_text_pair.second),
+                                          [this, filter_text_pair] {
                         Settings::values.scaling_filter.SetValue(filter_text_pair.first);
                         UpdateFilterText();
                     });
@@ -1192,7 +1194,8 @@ void MainWindow::InitializeWidgets() {
                 QMenu context_menu;
 
                 for (auto const& pair : ConfigurationShared::use_docked_mode_texts_map) {
-                    context_menu.addAction(pair.second, [this, &pair] {
+                    context_menu.addAction(ConfigurationShared::TranslateText(pair.second),
+                                          [this, &pair] {
                         if (pair.first != Settings::values.use_docked_mode.GetValue()) {
                             OnToggleDockedMode();
                         }
@@ -1216,7 +1219,8 @@ void MainWindow::InitializeWidgets() {
                 QMenu context_menu;
 
                 for (auto const& gpu_accuracy_pair : ConfigurationShared::gpu_accuracy_texts_map) {
-                    context_menu.addAction(gpu_accuracy_pair.second, [this, gpu_accuracy_pair] {
+                    context_menu.addAction(ConfigurationShared::TranslateText(gpu_accuracy_pair.second),
+                                          [this, gpu_accuracy_pair] {
                         Settings::values.gpu_accuracy.SetValue(gpu_accuracy_pair.first);
                         UpdateGPUAccuracyButton();
                     });
@@ -1247,7 +1251,8 @@ void MainWindow::InitializeWidgets() {
                         continue;
                     }
                     context_menu.addAction(
-                        renderer_backend_pair.second, [this, renderer_backend_pair] {
+                        ConfigurationShared::TranslateText(renderer_backend_pair.second),
+                        [this, renderer_backend_pair] {
                             Settings::values.renderer_backend.SetValue(renderer_backend_pair.first);
                             UpdateAPIText();
                         });
@@ -5093,36 +5098,39 @@ void MainWindow::UpdateGPUAccuracyButton() {
     const auto gpu_accuracy = Settings::values.gpu_accuracy.GetValue();
     const auto gpu_accuracy_text =
         ConfigurationShared::gpu_accuracy_texts_map.find(gpu_accuracy)->second;
-    gpu_accuracy_button->setText(gpu_accuracy_text.toUpper());
+    gpu_accuracy_button->setText(ConfigurationShared::TranslateText(gpu_accuracy_text).toUpper());
     gpu_accuracy_button->setChecked(gpu_accuracy != Settings::GpuAccuracy::Low);
 }
 
 void MainWindow::UpdateDockedButton() {
     const auto console_mode = Settings::values.use_docked_mode.GetValue();
     dock_status_button->setChecked(Settings::IsDockedMode());
-    dock_status_button->setText(
-        ConfigurationShared::use_docked_mode_texts_map.find(console_mode)->second.toUpper());
+    dock_status_button->setText(ConfigurationShared::TranslateText(
+        ConfigurationShared::use_docked_mode_texts_map.find(console_mode)->second)
+                                    .toUpper());
 }
 
 void MainWindow::UpdateAPIText() {
     const auto api = Settings::values.renderer_backend.GetValue();
     const auto renderer_status_text =
         ConfigurationShared::renderer_backend_texts_map.find(api)->second;
-    renderer_status_button->setText(renderer_status_text.toUpper());
+    renderer_status_button->setText(
+        ConfigurationShared::TranslateText(renderer_status_text).toUpper());
 }
 
 void MainWindow::UpdateFilterText() {
     const auto filter = Settings::values.scaling_filter.GetValue();
     const auto filter_text = ConfigurationShared::scaling_filter_texts_map.find(filter)->second;
-    filter_status_button->setText(filter_text.toUpper());
+    filter_status_button->setText(
+        ConfigurationShared::TranslateText(filter_text).toUpper());
 }
 
 void MainWindow::UpdateAAText() {
     const auto aa_mode = Settings::values.anti_aliasing.GetValue();
     const auto aa_text = ConfigurationShared::anti_aliasing_texts_map.find(aa_mode)->second;
     aa_status_button->setText(aa_mode == Settings::AntiAliasing::None
-                                  ? QStringLiteral(QT_TRANSLATE_NOOP("MainWindow", "NO AA"))
-                                  : aa_text.toUpper());
+                                  ? tr("NO AA")
+                                  : ConfigurationShared::TranslateText(aa_text).toUpper());
 }
 
 #ifdef HAS_RESHADE
@@ -5154,9 +5162,11 @@ void MainWindow::UpdateFrameGenButton() {
         return;
     }
 
-    const QString type = ConfigurationShared::frame_gen_type_texts_map
-                             .find(Settings::values.frame_gen_type.GetValue())
-                             ->second.toUpper();
+    const QString type = ConfigurationShared::TranslateText(
+                             ConfigurationShared::frame_gen_type_texts_map
+                                 .find(Settings::values.frame_gen_type.GetValue())
+                                 ->second)
+                             .toUpper();
     const u32 target_rate = Settings::values.frame_gen_target_rate.GetValue();
     const QString mode = target_rate == 0
                              ? tr("FG %1 %2X").arg(type).arg(Settings::FrameGenMultiplier())
